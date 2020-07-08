@@ -1,0 +1,46 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>/home/silardg/Documents/Freelance/toilet/pcb/pcb.sch</h1>
+    <p>Tue 07 Jan 2020 10:57:48 AM CET</p>
+    <p>Eeschema 5.1.5</p>
+    <p><b>Component Count:</b>42</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>BZ1</td><td>1</td><td>Buzzer</td><td>Device:Buzzer</td><td>Buzzer_Beeper:MagneticBuzzer_PUI_AT-0927-TT-6-R</td><td>Buzzer, polarized</td><td></td></tr>
+    <tr><td>C1, C3, C5, C6, C9, C11</td><td>6</td><td>100nF</td><td>Device:C</td><td>Capacitor_SMD:C_0603_1608Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C2, C7</td><td>2</td><td>1uF</td><td>Device:C</td><td>Capacitor_SMD:C_0603_1608Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C4, C10</td><td>2</td><td>10uF</td><td>Device:CP</td><td>Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I</td><td>Polarized capacitor</td><td></td></tr>
+    <tr><td>C8</td><td>1</td><td>10uF</td><td>Device:C</td><td>Capacitor_SMD:C_0603_1608Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>D1, D2</td><td>2</td><td>DFLS1100</td><td>Device:D</td><td>Diode_SMD:D_PowerDI-123</td><td>Diode</td><td></td></tr>
+    <tr><td>H1, H2</td><td>2</td><td>MountingHole</td><td>Mechanical:MountingHole</td><td>MountingHole:MountingHole_3.5mm</td><td>Mounting Hole without connection</td><td></td></tr>
+    <tr><td>J1</td><td>1</td><td>FLUSH_SWITCH</td><td>Connector_Generic:Conn_01x02</td><td>pcb:conn_solder</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J2</td><td>1</td><td>ISP</td><td>Connector_Generic:Conn_02x03_Odd_Even</td><td>pcb:PinHeader_2x03_P2.54mm_Vertical</td><td>Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J3</td><td>1</td><td>BATTERY</td><td>Connector_Generic:Conn_01x02</td><td>pcb:conn_solder</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J4</td><td>1</td><td>SOLENOID</td><td>Connector_Generic:Conn_01x02</td><td>pcb:conn_solder</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J5</td><td>1</td><td>BUZZER_CONN</td><td>Connector_Generic:Conn_01x02</td><td>pcb:conn_solder</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>J6</td><td>1</td><td>L_DETECT</td><td>Connector_Generic:Conn_01x02</td><td>pcb:conn_solder</td><td>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>JP1</td><td>1</td><td>jumper</td><td>Device:Jumper_NO_Small</td><td>Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm</td><td>Jumper, normally open, small symbol</td><td></td></tr>
+    <tr><td>JP2</td><td>1</td><td>VCC_JUMPER</td><td>Device:Jumper_NC_Small</td><td>Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm</td><td>Jumper, normally closed, small symbol</td><td></td></tr>
+    <tr><td>Q1</td><td>1</td><td>DMG2301L</td><td>Transistor_FET:DMG2301L</td><td>Package_TO_SOT_SMD:SOT-23</td><td>-3A Id, -20V Vds, P-Channel MOSFET, SOT-23</td><td></td></tr>
+    <tr><td>Q2</td><td>1</td><td>BC817</td><td>Transistor_BJT:BC817</td><td>Package_TO_SOT_SMD:SOT-23</td><td>0.8A Ic, 45V Vce, NPN Transistor, SOT-23</td><td></td></tr>
+    <tr><td>R1</td><td>1</td><td>100</td><td>Device:R</td><td>Resistor_SMD:R_0603_1608Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R2, R4, R8, R10</td><td>4</td><td>10K</td><td>Device:R</td><td>Resistor_SMD:R_0603_1608Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R3, R5, R6</td><td>3</td><td>100k</td><td>Device:R</td><td>Resistor_SMD:R_0603_1608Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R7</td><td>1</td><td>220</td><td>Device:R</td><td>Resistor_SMD:R_0603_1608Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R9</td><td>1</td><td>2k2</td><td>Device:R</td><td>Resistor_SMD:R_0603_1608Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>ATtiny44A-SSU</td><td>MCU_Microchip_ATtiny:ATtiny44A-SSU</td><td>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</td><td>20MHz, 4kB Flash, 256B SRAM, 256B EEPROM, debugWIRE, SOIC-14</td><td></td></tr>
+    <tr><td>U2</td><td>1</td><td>AZ1117-1.8</td><td>Regulator_Linear:AZ1117-1.8</td><td>Package_TO_SOT_SMD:SOT-223</td><td>1A 20V Fixed LDO Linear Regulator, 1.8V, SOT-89/SOT-223/TO-220/TO-252/TO-263</td><td></td></tr>
+    <tr><td>U3</td><td>1</td><td>DRV8837</td><td>Driver_Motor:DRV8837</td><td>Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm</td><td>H-Bridge driver, 1.8A, Low Voltage, PWM input, WSON-8</td><td></td></tr>
+    <tr><td>Y1</td><td>1</td><td>32khz_smd</td><td>Device:Crystal</td><td>Crystal:Crystal_SMD_SeikoEpson_MC306-4Pin_8.0x3.2mm</td><td>Two pin crystal</td><td></td></tr>
+    <tr><td>Y2</td><td>1</td><td>32khz_th</td><td>Device:Crystal</td><td>Crystal:Crystal_DS26_D2.0mm_L6.0mm_Horizontal_1EP_style2</td><td>Two pin crystal</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    

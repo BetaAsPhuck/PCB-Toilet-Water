@@ -1,0 +1,6 @@
+ https://github.com/free-pdk/easy-pdk-programmer-hardware
+ https://github.com/free-pdk/easy-pdk-programmer-hardware/blob/master/schematic/easypdkprog_schematic12.pdf
+https://datasheet.lcsc.com/szlcsc/1912111437_PADAUK-Tech-PMS171B-S14_C337968.pdf
+https://lcsc.com/product-detail/Others_PADAUK-Tech-PMS171B-S14_C337968.html
+ https://lcsc.com/products/PADAUK_11011.html?q=PMS171B
+ 
