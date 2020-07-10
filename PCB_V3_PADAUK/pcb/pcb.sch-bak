@@ -38,46 +38,6 @@ Text GLabel 1800 900  2    50   Input ~ 0
 XTAL1
 Text GLabel 1800 1400 2    50   Input ~ 0
 XTAL2
-Text GLabel 3700 1050 0    50   Input ~ 0
-ISP_MISO
-Text GLabel 3700 1150 0    50   Input ~ 0
-ISP_SCK
-Text GLabel 4300 1150 2    50   Input ~ 0
-ISP_MOSI
-Text GLabel 3700 1250 0    50   Input ~ 0
-ISP_RESET
-$Comp
-L power:GND #PWR0106
-U 1 1 5E0DD268
-P 4300 1250
-F 0 "#PWR0106" H 4300 1000 50  0001 C CNN
-F 1 "GND" V 4300 1050 50  0000 C CNN
-F 2 "" H 4300 1250 50  0001 C CNN
-F 3 "" H 4300 1250 50  0001 C CNN
-	1    4300 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J2
-U 1 1 5E1151CF
-P 3950 1150
-F 0 "J2" H 4000 1467 50  0000 C CNN
-F 1 "ISP" H 4000 1376 50  0000 C CNN
-F 2 "pcb:PinHeader_2x03_P2.54mm_Vertical" H 3950 1150 50  0001 C CNN
-F 3 "~" H 3950 1150 50  0001 C CNN
-	1    3950 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 1050 3750 1050
-Wire Wire Line
-	3700 1150 3750 1150
-Wire Wire Line
-	3700 1250 3750 1250
-Wire Wire Line
-	4250 1150 4300 1150
-Wire Wire Line
-	4300 1250 4250 1250
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5E154B57
@@ -468,8 +428,6 @@ Text Notes 5300 3600 0    79   ~ 0
 Decouple caps\n
 Text Notes 600  1900 0    79   ~ 0
 Crystal 32.768kHz | SMD + TH
-Wire Wire Line
-	4250 1050 4300 1050
 $Comp
 L Regulator_Linear:AZ1117-1.8 U2
 U 1 1 5E141DFC
@@ -493,17 +451,6 @@ F 2 "" H 6700 950 50  0001 C CNN
 F 3 "" H 6700 950 50  0001 C CNN
 	1    6700 950 
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR0105
-U 1 1 5E1450D9
-P 4300 1050
-F 0 "#PWR0105" H 4300 900 50  0001 C CNN
-F 1 "+1V8" V 4315 1178 50  0000 L CNN
-F 2 "" H 4300 1050 50  0001 C CNN
-F 3 "" H 4300 1050 50  0001 C CNN
-	1    4300 1050
-	0    1    1    0   
 $EndComp
 Text Notes 8250 1250 0    67   ~ 0
 Voltage divider R1: 10K R2: 2K2\nVIN 3V -> 0.541V\nVIN 9V -> 1.623V\nMAX VIN 10V -> 1.803V
@@ -1298,12 +1245,12 @@ $EndComp
 Wire Wire Line
 	2200 6250 2400 6250
 $Comp
-L Connector_Generic:Conn_01x06 J?
+L Connector_Generic:Conn_01x06 J7
 U 1 1 5F06FB6D
 P 2600 6900
-F 0 "J?" V 2472 7180 50  0000 L CNN
+F 0 "J7" V 2472 7180 50  0000 L CNN
 F 1 "Programming Connector" V 2563 7180 50  0000 L CNN
-F 2 "" H 2600 6900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2600 6900 50  0001 C CNN
 F 3 "~" H 2600 6900 50  0001 C CNN
 	1    2600 6900
 	0    1    1    0   
@@ -1323,10 +1270,10 @@ Connection ~ 2600 6050
 Wire Wire Line
 	2600 6050 2200 6050
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0132
 U 1 1 5F087C63
 P 2700 6650
-F 0 "#PWR?" H 2700 6400 50  0001 C CNN
+F 0 "#PWR0132" H 2700 6400 50  0001 C CNN
 F 1 "GND" H 2705 6477 50  0000 C CNN
 F 2 "" H 2700 6650 50  0001 C CNN
 F 3 "" H 2700 6650 50  0001 C CNN
@@ -1334,10 +1281,10 @@ F 3 "" H 2700 6650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+1V8 #PWR?
+L power:+1V8 #PWR0140
 U 1 1 5F08E520
 P 2800 6550
-F 0 "#PWR?" H 2800 6400 50  0001 C CNN
+F 0 "#PWR0140" H 2800 6400 50  0001 C CNN
 F 1 "+1V8" H 2815 6723 50  0000 C CNN
 F 2 "" H 2800 6550 50  0001 C CNN
 F 3 "" H 2800 6550 50  0001 C CNN
@@ -1355,4 +1302,57 @@ Wire Wire Line
 Connection ~ 2500 5850
 Wire Wire Line
 	2500 5850 2900 5850
+Wire Wire Line
+	3700 1250 3750 1250
+Wire Wire Line
+	3700 1150 3750 1150
+Wire Wire Line
+	3700 1050 3750 1050
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J2
+U 1 1 5E1151CF
+P 3950 1150
+F 0 "J2" H 4000 1467 50  0000 C CNN
+F 1 "ISP" H 4000 1376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3950 1150 50  0001 C CNN
+F 3 "~" H 3950 1150 50  0001 C CNN
+	1    3950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR0105
+U 1 1 5E1450D9
+P 4300 1050
+F 0 "#PWR0105" H 4300 900 50  0001 C CNN
+F 1 "+1V8" V 4315 1178 50  0000 L CNN
+F 2 "" H 4300 1050 50  0001 C CNN
+F 3 "" H 4300 1050 50  0001 C CNN
+	1    4300 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 1050 4300 1050
+Wire Wire Line
+	4300 1250 4250 1250
+Wire Wire Line
+	4250 1150 4300 1150
+$Comp
+L power:GND #PWR0106
+U 1 1 5E0DD268
+P 4300 1250
+F 0 "#PWR0106" H 4300 1000 50  0001 C CNN
+F 1 "GND" V 4300 1050 50  0000 C CNN
+F 2 "" H 4300 1250 50  0001 C CNN
+F 3 "" H 4300 1250 50  0001 C CNN
+	1    4300 1250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4300 1150 2    50   Input ~ 0
+ISP_MOSI
+Text GLabel 3700 1250 0    50   Input ~ 0
+ISP_RESET
+Text GLabel 3700 1150 0    50   Input ~ 0
+ISP_SCK
+Text GLabel 3700 1050 0    50   Input ~ 0
+ISP_MISO
 $EndSCHEMATC
