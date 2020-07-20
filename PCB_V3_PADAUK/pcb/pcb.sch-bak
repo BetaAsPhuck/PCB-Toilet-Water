@@ -1250,7 +1250,7 @@ U 1 1 5F06FB6D
 P 2600 6900
 F 0 "J7" V 2472 7180 50  0000 L CNN
 F 1 "Programming Connector" V 2563 7180 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2600 6900 50  0001 C CNN
+F 2 "pcb:PinHeader_2x03_P2.54mm_Vertical" H 2600 6900 50  0001 C CNN
 F 3 "~" H 2600 6900 50  0001 C CNN
 	1    2600 6900
 	0    1    1    0   
